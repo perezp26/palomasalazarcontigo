@@ -6,11 +6,13 @@ export default function Home() {
   return (
     <>
       <Layout titulo={'Inicio'} description={''}>
-         <div className={`grid grid-cols-3 gap-2 content-center ${ styles.video }`} >
-                      <div className=' col-end-4 col-span-1 h-full text-left'> 
-                            <p className=' font-light text-5xl'> Atrevete
-                                  y Se Tu Mejor Versión
+         <div className={`grid grid-cols-3 gap-2 content-center ${ styles.video } `}  >
+                      <div className=' col-start-2 col-end-2 h-full text-left'> 
+                              <p className=' font-light text-6xl'> ATRÉVETE y Se Tu Mejor Versión"
                              </p>
+                             <p className='font-light text-right md:mr-5'>by PS</p>
+                      </div>
+                      <div className=' col-end-4 col-span-2 h-full text-left'> 
                              <div className='border mt-2' style={{ borderColor:'#0047CB' }} ></div>
 
                              <div className='w-full mt-7 text-center'><p className='font-light text-3xl' >Ver Viedo</p></div>
@@ -27,14 +29,14 @@ export default function Home() {
                 <div className='m-auto'>
 
                 <h2 className='subtitle' >Acerca de mi </h2>
-                <p className=' text-justify ' >
+                <p className=' text-justify  leading-relaxed' >
                     {`
                             Soy una gran apasionada de la nutrición clínica y artificial en el paciente adulto y una
                             enamorada de la nutrición en la medicina estética a nivel celular.
 
                     `}
                 </p>
-                <p className=' text-justify font-light pt-7'>
+                <p className=' text-justify font-light pt-7 leading-relaxed'>
                            Creo firmemente que la belleza externa van de la mano de una salud integral y buenos
                             hábitos de vida es por esto que te acompaño a través del apoyo nutrimental en cualquier
                             condición de salud, a través de la suplementación intravenosa de nutrientes como
