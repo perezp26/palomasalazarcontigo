@@ -8,17 +8,28 @@ export default function Home() {
       <Layout titulo={'Inicio'} description={''}>
          <div className={`grid grid-cols-3 gap-2 content-center ${ styles.video } `}  >
                       <div className=' col-start-2 col-end-2 h-full text-left'> 
-                              <p className=' font-light text-5xl'> "ATRÉVETE y Se Tu Mejor Versión"
-                             </p>
-                             <p className='font-light text-right md:mr-5'>by PS</p>
+                              <p className=' font-light text-5xl'> "ATRÉVETE y Se Tu Mejor Versión"</p>
+                             
                       </div>
                       <div className=' col-end-4 col-span-2 h-full text-left'> 
                              <div className='border mt-2' style={{ borderColor:'#0047CB' }} ></div>
-
-                             <div className='w-full mt-7 text-center'><p className='font-light text-3xl' >Ver Viedo</p></div>
                       </div>
-                      
+                      <div className=' col-start-2 col-end-2 h-full text-left'> 
+                        <p className='font-light text-right md:mr-5'>by PS</p>
+                      </div>   
+
+                       <div className='col-span-3 text-center'>
+                            <div className='font-light md:mt-32 mt-24' >
+                              <span className="fa-stack">
+                                <i className="fa-solid fa-circle fa-stack-1x"></i>
+                                <i className="fa-solid fa-play fa-stack text-base fa-inverse"></i>
+                              </span>
+                               Ver Video
+                            </div>
+                        </div>              
          </div>
+
+        
 
          <div className=' container mx-auto md:flex p-12 '>
             <div className='md:w-1/3'>
@@ -28,13 +39,14 @@ export default function Home() {
               <div className=' flex h-full'>
                 <div className='m-auto'>
 
-                <h2 className='subtitle' >Acerca de mi </h2>
-                <p className=' text-justify  leading-relaxed' >
+                <h2 className='subtitle' >Currícula </h2>
+               
+                <p className=' text-justify  leading-relaxed' > 
                     {`
                             Soy una gran apasionada de la nutrición clínica y artificial en el paciente adulto y una
                             enamorada de la nutrición en la medicina estética a nivel celular.
 
-                    `}
+                    `}<i class="fa-solid fa-heart"></i>
                 </p>
                 <p className=' text-justify font-light pt-7 leading-relaxed'>
                            Creo firmemente que la belleza externa van de la mano de una salud integral y buenos

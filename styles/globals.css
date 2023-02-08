@@ -5,6 +5,7 @@
 
 :root {
   --primary: #0047cb;
+  --secondary: #FFB900;
   --black: #000000;
   --white: #FFF;
   --fuente-principal: 'Quicksand', sans-serif;
@@ -44,9 +45,9 @@ body {
 }
 
 [class*="subtitle"]{
-  font-size: 3rem;
+  font-size: 2.7rem;
   text-align: left;
-  font-weight: 600;
+  font-weight: 200;
   color: var(--primary);
   margin: 2rem 0;
 }
