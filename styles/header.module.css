@@ -25,7 +25,6 @@
 } 
 
 .navegacion {
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,6 +34,7 @@
 
 @media (min-width:768px){
     .navegacion{
+        margin-top: 5rem;
         flex-direction: row;
         margin:0;
         gap: 7.5rem;
