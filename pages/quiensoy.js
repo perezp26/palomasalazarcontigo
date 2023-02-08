@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Layout from '../components/layout'
+import styles from '../styles/quiensoy.module.css'
 
 const quiensoy = () => {
   return (
@@ -17,50 +18,50 @@ const quiensoy = () => {
                         <h2 className='subtitle' > Currícula </h2>
                           <div className='border -mt-9' style={{ borderColor:'#FFB900' }} ></div>
                           <div className='flex md:justify-start mt-7 mb-5'>
-                                <i className="fa-solid fa-certificate pt-1 pr-4"></i>
+                                <i className={ `fa-solid fa-circle ${ styles.vinieta } `} ></i>
                                 <p className='text-justify'>Egresada de la Universidad Autónoma de Yucatán como licenciada en Nutrición, Mérida, Yucatán.</p>
                           </div> 
                           <div className='flex md:justify-start mb-5'>
-                                <i className="fa-solid fa-certificate pt-1 pr-4"></i>
+                                <i className={ `fa-solid fa-circle ${ styles.vinieta } `}></i>
                                 <p className='text-justify'>Master en Nutrición y Dietética Aplicada por la Universidad de León, León España.</p>
                           </div> 
                           <div className='flex md:justify-start mb-5'>
-                                <i className="fa-solid fa-certificate pt-1 pr-4"></i>
+                                <i className={ `fa-solid fa-circle ${ styles.vinieta } `}></i>
                                 <p className='text-justify'>Especialidad en Nutrición Hospitalaria y Trastornos de la conducta Alimentaria por la Universidad de León, León España.</p>
                           </div> 
                           <div className='flex md:justify-start mb-5'>
-                                <i className="fa-solid fa-certificate pt-1 pr-4"></i>
+                                <i className={ `fa-solid fa-circle ${ styles.vinieta } `}></i>
                                 <p className='text-justify'>Maestra en Nutrición Clínica por la Universidad Anáhuac Mayab, Mérida, Yucatán.</p>
                           </div> 
                           <div className='flex md:justify-start mb-5'>
-                                <i className="fa-solid fa-certificate pt-1 pr-4"></i>
+                                <i className={ `fa-solid fa-circle ${ styles.vinieta } `}></i>
                                 <p className='text-justify'>Especialidad en Nutrición Estética, por la Universidad Iberoamericana de Desarrollo Humano y Organizacional , CDMX, México</p>
                           </div> 
                           <div className='flex md:justify-start mb-24'>
-                                <i className="fa-solid fa-certificate pt-1 pr-4"></i>
+                                <i className={ `fa-solid fa-circle ${ styles.vinieta } `}></i>
                                 <p className='text-justify'>Asesora de Imagen y Personal Shopper por ELLE education program, Madrid ,España.</p>
                           </div> 
                         
                           <h2 className=' mt-12 subtitle' > Laboral </h2>
                             <div className='border -mt-9' style={{ borderColor:'#FFB900' }} ></div>
                             <div className='flex md:justify-start mt-7 mb-5'>
-                                  <i class="fa-sharp fa-solid fa-chevron-right pt-1 pr-4"></i>
+                                  <i className={`fa-sharp fa-solid fa-chevron-right ${ styles.vinieta} `}></i>
                                   <p className='text-justify'>Hospital H O&#39;HORAN área de cuidados críticos y nutrición en el paciente adulto.</p>
                             </div> 
                             <div className='flex md:justify-start mb-5'>
-                                  <i className="fa-sharp fa-solid fa-chevron-right pt-1 pr-4"></i>
+                                  <i className={`fa-sharp fa-solid fa-chevron-right ${ styles.vinieta} `}></i>
                                   <p className='text-justify'>LAMP Laboratorio de Mezclas Parenterales .</p>
                             </div> 
                             <div className='flex md:justify-start mb-5'>
-                                  <i className="fa-sharp fa-solid fa-chevron-right pt-1 pr-4"></i>
+                                  <i className={`fa-sharp fa-solid fa-chevron-right ${ styles.vinieta} `}></i>
                                   <p className='text-justify'>Laboratorios PISA, en el centro de Mezclas Parenterales SAFE.</p>
                             </div> 
                             <div className='flex md:justify-start mb-5'>
-                                  <i className="fa-sharp fa-solid fa-chevron-right pt-1 pr-4"></i>
+                                  <i className={`fa-sharp fa-solid fa-chevron-right ${ styles.vinieta} `}></i>
                                   <p className='text-justify'>Laboratorio Fresenius Kabi México.</p>
                             </div> 
                             <div className='flex md:justify-start mb-5'>
-                                  <i className="fa-sharp fa-solid fa-chevron-right pt-1 pr-4"></i>
+                                  <i className={`fa-sharp fa-solid fa-chevron-right ${ styles.vinieta} `}></i>
                                   <p className='text-justify'>Actualmente: Paloma Salazar, Nutrición Clínica y Estética</p>
                             </div> 
                     

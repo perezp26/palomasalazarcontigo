@@ -15,7 +15,7 @@ const Header = () => {
                 <Image src='/img/monograma2.png' width={ 68 }  height={ 90 } alt="monograma" className=' mx-auto ' />
             </div>
             <div className='md:w-5/6 text-center pt-2 '>
-                <Image src='/img/logotipo2.png' width={ 1000 }  height={ 78 } alt="logo" className=' mx-auto ' />
+                <Image src='/img/logotipo2.png' width={ 1000 }  height={ 100 } alt="logo" className=' mx-auto ' />
             </div>
         </div>
         </div>
