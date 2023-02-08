@@ -39,7 +39,7 @@ export default function Home() {
               <div className=' flex h-full'>
                 <div className='m-auto'>
 
-                <h2 className='subtitle' >Currícula </h2>
+                <h2 className='subtitle' >ACERCA DE MI </h2>
                
                 <p className=' text-justify  leading-relaxed' > 
                     {`

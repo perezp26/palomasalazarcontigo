@@ -43,7 +43,7 @@ const quiensoy = () => {
                         
                           <h2 className=' mt-12 subtitle' > Laboral </h2>
                             <div className='border -mt-9' style={{ borderColor:'#FFB900' }} ></div>
-                            <div className='flex md:justify-start mb-5'>
+                            <div className='flex md:justify-start mt-7 mb-5'>
                                   <i class="fa-sharp fa-solid fa-chevron-right pt-1 pr-4"></i>
                                   <p className='text-justify'>Hospital H O&#39;HORAN área de cuidados críticos y nutrición en el paciente adulto.</p>
                             </div> 
