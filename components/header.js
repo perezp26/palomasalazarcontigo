@@ -27,13 +27,13 @@ const Header = () => {
                         <Link href="/">
                             Inicio
                         </Link>
-                        <Link href="/nosotros">
+                        <Link href="/quiensoy">
                             Quien Soy
                         </Link>
-                        <Link href="/servicios">
+                        <Link href="/">
                             Servicios
                         </Link>
-                        <Link href="/contacto">
+                        <Link href="/">
                             Contacto
                         </Link>
                         
