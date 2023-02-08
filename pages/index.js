@@ -8,7 +8,7 @@ export default function Home() {
       <Layout titulo={'Inicio'} description={''}>
          <div className={`grid grid-cols-3 gap-2 content-center ${ styles.video } `}  >
                       <div className=' col-start-2 col-end-2 h-full text-left'> 
-                              <p className=' font-light text-5xl'> "ATRÉVETE y Se Tu Mejor Versión"</p>
+                              <p className=' font-light text-5xl'> "ATRÉVETE Y SE TU MEJOR VERSIÓN"</p>
                              
                       </div>
                       <div className=' col-end-4 col-span-2 h-full text-left'> 
