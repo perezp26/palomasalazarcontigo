@@ -3,12 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Dialight";   /*Can be any text*/
+  src: local("Dia-Light"),
+    url("../public/fonts/Dia-Light.otf") format("truetype");
+}
+
 :root {
   --primary: #0047cb;
   --secondary: #FFB900;
   --black: #000000;
   --white: #FFF;
-  --fuente-principal: 'Quicksand', sans-serif;
+  --fuente-principal: 'Dialight', sans-serif;
 }
 html {
   font-size: 62.5%;

@@ -1,3 +1,4 @@
+import '../public/fonts/Dia-Light.otf'
 import '../styles/globals.css'
 import '../styles/normalize.css'
 
