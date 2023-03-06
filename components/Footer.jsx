@@ -5,7 +5,7 @@ import styles from '../styles/footer.module.css'
 const Footer = () => {
   return (
     <footer className={ `${styles.footer} ` }>
-      <div className={ ` ${ styles.contenido }` }>
+      <div className={ ` ${ styles.contenido } ` }>
           <nav className={ `py-7 ${styles.navegacion}`}>
                         <Link href="/">
                             Inicio

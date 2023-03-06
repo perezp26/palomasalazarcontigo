@@ -28,7 +28,7 @@ html {
 body {
   font-size: 2rem;
   font-family: var(--fuente-principal);
-  background-color: #fbf9f3
+  background-color: #fbf9f3;
   /*line-height: 1.5;*/
 }
 /* img {

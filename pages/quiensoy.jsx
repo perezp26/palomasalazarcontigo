@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import styles from '../styles/quiensoy.module.css'
 
 const quiensoy = () => {
@@ -9,12 +9,37 @@ const quiensoy = () => {
             <h2 className='heading'>QUIEN SOY </h2>
 
             <div className=' container mx-auto md:flex p-12 '>
-            <div className='md:w-1/3'>
-                    <Image src='/img/foto_paloma.jpeg' width={480} height={640} alt="Paloma" />
+            <div className='md:w-1/3 '>
+                  <div className='flex h-full'>
+                        <div className=' '>
+                              <Image src='/img/foto_paloma.jpeg' width={480} height={640} alt="Paloma"  />
+                        </div>
+                  </div>
             </div>
-                <div className='md:w-2/3 text-center md:pl-32'>
-                  <div className=' flex h-full font-light '>
-                    <div className=''>
+                <div className='md:w-2/3 text-center md:pl-32 '>
+                  <div className='font-light '>
+                    <div className=' -mt-10'>
+
+                        <h2 className='subtitle' >ACERCA DE MI </h2>
+                        
+                        <p className=' text-justify  leading-relaxed' > 
+                              {`
+                                    Soy una gran apasionada de la nutrición clínica y artificial en el paciente adulto y una
+                                    enamorada de la nutrición en la medicina estética a nivel celular.
+
+                              `}<i className="fa-solid fa-heart"></i>
+                        </p>
+                        <p className=' text-justify font-light pt-7 leading-relaxed mb-20'>
+                                    Creo firmemente que la belleza externa van de la mano de una salud integral y buenos
+                                    hábitos de vida es por esto que te acompaño a través del apoyo nutrimental en cualquier
+                                    condición de salud, a través de la suplementación intravenosa de nutrientes como
+                                    vitaminas, minerales, enzimas y coenzimas introducidas por una vena periférica de
+                                    manera inocua y segura o bien te acompaño con un diagnóstico de tus formas físicas y de
+                                    color por medio de la imagenología para lograr juntos a cumplir metas reales con
+                                    nutrición especializada armonizando con soporte enteral y venoso y la asesoría de
+                                    imagen. Atrévete y Sé tu mejor versión
+                        </p>
+                   </div>
                         <h2 className='subtitle' > Currícula </h2>
                           <div className='border -mt-9' style={{ borderColor:'#FFB900' }} ></div>
                           <div className='flex md:justify-start mt-7 mb-5'>
@@ -65,7 +90,7 @@ const quiensoy = () => {
                                   <p className='text-justify'>Actualmente: Paloma Salazar, Nutrición Clínica y Estética</p>
                             </div> 
                     
-                    </div>
+                    
                   </div>
                 </div>
 
