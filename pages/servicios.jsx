@@ -16,7 +16,7 @@ const servicios = () => {
 
                 <div className=' flex h-full'>
                     <div className='m-auto'>
-                        <p className='leading-relaxed text-white'>
+                        <p className='leading-relaxed text-white' style={{ fontSize: '20pt' }}>
                                 <a style={{ color:'#009245' }}>MI MISIÓN</a> CONSISTE EN INTEGRAR
                                 LOS BENEFICIOS DE LOS NUTRIENTES EN UNA
                                 ALIMENTACIÓN PERSONALIZADA A TU
@@ -41,14 +41,14 @@ const servicios = () => {
 
                 <div className=' flex h-full'>
                     <div className='m-auto'>
-                        <p className='leading-relaxed text-black'>
+                        <p className='leading-relaxed text-black' style={{ fontSize: '20pt' }}>
                             CONSISTE EN ADMINISTRAR VITAMINAS (ANTIOXIDANTES)
                             Y MINERALES DIRECTAMENTE AL TORRENTE SANGUÍNEO.
                             PROMOVIENDO LA ABSORCIÓN A MAYOR PORCENTAJE
                             DE LOS NUTRIENTES INGERIDOS EN LA DIETA DIARIAMENTE.
                         </p>
 
-                        <p className='leading-relaxed text-black mt-20'>
+                        <p className='leading-relaxed text-black mt-20' style={{ fontSize: '20pt' }}>
                             PRIMER CENTRO EXCLUSIVO Y ESPECIALIZADO DE SEROTERAPIA
                             (SUPLEMENTACION INTRAVENOSA) AVANZADA EN MERIDA
                         </p>
@@ -69,7 +69,7 @@ const servicios = () => {
 
                 <div className=' flex h-full'>
                     <div className='m-auto'>
-                        <p className='leading-relaxed text-white'>
+                        <p className='leading-relaxed text-white' style={{ fontSize: '20pt' }}>
                                 COMO AMANTE DE LA BELLEZA MI OBJETIVO
                                 ES GUIARTE HACIA EL BALANCE NATURAL
                                 DE TUS FORMAS FÍSICAS Y POTÉNCIALIZARLAS
