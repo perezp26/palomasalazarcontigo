@@ -18,7 +18,7 @@ const quiensoy = () => {
             </div>
                 <div className='md:w-2/3 text-center md:pl-32 '>
                   <div className='font-light '>
-                    <div className=' -mt-10'>
+                    <div className=' md:-mt-10'>
 
                         <h2 className='subtitle' >ACERCA DE MI </h2>
                         
