@@ -10,7 +10,7 @@ const Footer = () => {
                         <Link href="/">
                             Inicio
                         </Link>
-                        <Link href="/nosotros">
+                        <Link href="/quiensoy">
                             Quien Soy
                         </Link>
                         <Link href="/servicios">

@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 const servicios = () => {
   return (
     <>
-    <Layout>
+    <Layout titulo='Servicios'>
         
         <div className='my-10' style={{ backgroundColor:'#000000' }}>
          <div className=' container mx-auto md:flex p-12 '>

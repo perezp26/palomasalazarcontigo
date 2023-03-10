@@ -5,7 +5,7 @@ import styles from '../styles/quiensoy.module.css'
 const quiensoy = () => {
   return (
     <>
-        <Layout>
+        <Layout titulo='Quien Soy'>
             <h2 className='heading'>QUIEN SOY </h2>
 
             <div className=' container mx-auto md:flex p-12 '>
