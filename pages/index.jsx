@@ -9,8 +9,9 @@ import styles from '../styles/index.module.css'
 export default function Home() {
   
   const [hasWindow, setHasWindow] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [viewModal, setViewModal] = useState({  animacionBackground : ' animate__animated animate__fadeIn', animacionContent : 'animate__animated animate__fadeIn', openClose: true });
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMute, setIsMute] = useState(true);
+  const [viewModal, setViewModal] = useState({  animacionBackground : ' animate__animated animate__fadeIn', animacionContent : 'animate__animated animate__fadeIn', openClose: false });
 
   useEffect(() => {
 
@@ -19,6 +20,8 @@ export default function Home() {
     if (typeof window !== "undefined") {
       setHasWindow(true);
     }
+
+//    setTimeout( () => {  setIsPlaying( false ); setIsMute( true ) }, 1000)
 
   }, []);
 
@@ -70,12 +73,13 @@ export default function Home() {
          </div>
          
           <Modal viewModal={ viewModal } setViewModal={ setViewModal } handleViewVideo = { handleViewVideo }>
-              { hasWindow && viewModal.openClose && 
-                <ReactPlayer url="/media/video_paloma.mp4" 
+              { hasWindow && 
+                <ReactPlayer url={ `${viewModal.openClose ? "/media/video_paloma.mp4" : "" }` }
+                             // url = "/media/video_paloma.mp4"
                              //light={<img src='/img/monogramaBlack.png' alt='icono' />}
                              controls 
                              playing={ isPlaying } 
-                             muted = { true }
+                             muted = { isMute }
                              height="100%" 
                              width="100%" 
                   /> 
