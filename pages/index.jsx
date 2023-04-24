@@ -1,8 +1,48 @@
-import Image from 'next/image'
+import { useState, useEffect } from 'react'
+
+import ReactPlayer from 'react-player/lazy'
+
 import Layout from '../components/Layout'
+import { Modal } from '../components/Modal'
 import styles from '../styles/index.module.css'
 
 export default function Home() {
+  
+  const [hasWindow, setHasWindow] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [viewModal, setViewModal] = useState({  animacionBackground : ' animate__animated animate__fadeIn', animacionContent : 'animate__animated animate__fadeIn', openClose: true });
+
+  useEffect(() => {
+
+      localStorage.getItem('viewVideoPaloma') && setViewModal({ ...viewModal, openClose : false });
+
+    if (typeof window !== "undefined") {
+      setHasWindow(true);
+    }
+
+  }, []);
+
+  useEffect(() => {
+
+    setIsPlaying( viewModal.openClose );
+
+  }, [viewModal])
+  
+  const handleViewVideo = () =>{ 
+    
+    !localStorage.getItem('viewVideoPaloma') && localStorage.setItem('viewVideoPaloma', 'true') ;
+
+    const timeView = viewModal.openClose ? 500 : 1;
+    viewModal.openClose && setViewModal({...viewModal, animacionBackground : ' animate__animated animate__fadeOut', animacionContent : 'animate__animated animate__bounceOut' });
+    
+
+    setTimeout(() => {
+      console.log( viewModal );
+            viewModal.openClose ? setViewModal({ ...viewModal, openClose : !viewModal.openClose  })
+                                : setViewModal({...viewModal, openClose : !viewModal.openClose , animacionBackground : ' animate__animated animate__fadeIn', animacionContent : 'animate__animated animate__fadeIn' }) 
+        }, timeView)
+  }
+
   return (
     <>
       <Layout titulo={'Inicio'} description={''}>
@@ -19,17 +59,28 @@ export default function Home() {
                       </div>   
 
                        <div className='col-span-3 text-center'>
-                            <div className='font-light md:mt-32 mt-24' >
-                              <span className="fa-stack">
-                                <i className="fa-solid fa-circle fa-stack-1x"></i>
+                            <div className='font-light md:mt-32 mt-24 cursor-pointer' onClick={ handleViewVideo } >
+                              <span className="fa-stack -mt-5 ">
+                                <i className="fa-solid fa-circle fa-stack-2x"></i>
                                 <i className="fa-solid fa-play fa-stack text-base fa-inverse"></i>
                               </span>
-                               Ver Video
+                               <a className=' text-5xl mt-10'>Ver Video</a>
                             </div>
                         </div>              
          </div>
-
-        
+         
+          <Modal viewModal={ viewModal } setViewModal={ setViewModal } handleViewVideo = { handleViewVideo }>
+              { hasWindow && viewModal.openClose && 
+                <ReactPlayer url="/media/video_paloma.mp4" 
+                             //light={<img src='/img/monogramaBlack.png' alt='icono' />}
+                             controls 
+                             playing={ isPlaying } 
+                             muted = { true }
+                             height="100%" 
+                             width="100%" 
+                  /> 
+              }
+          </Modal>
 
       </Layout>
     </>
