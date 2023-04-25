@@ -74,7 +74,7 @@ export default function Home() {
          
           <Modal viewModal={ viewModal } setViewModal={ setViewModal } handleViewVideo = { handleViewVideo }>
               { hasWindow && 
-                <ReactPlayer url={ `${viewModal.openClose ? "/media/video_paloma.webm" : "" }` }
+                <ReactPlayer url={ `${viewModal.openClose ? "/media/video_paloma.mp4" : "" }` }
                              // url = "/media/video_paloma.mp4"
                              //light={<img src='/img/monogramaBlack.png' alt='icono' />}
                              controls 
