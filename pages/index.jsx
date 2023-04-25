@@ -78,6 +78,7 @@ export default function Home() {
                              // url = "/media/video_paloma.mp4"
                              //light={<img src='/img/monogramaBlack.png' alt='icono' />}
                              controls 
+                             playsinline 
                              playing={ isPlaying } 
                              muted = { isMute }
                              height="100%" 
