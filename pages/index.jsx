@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/lazy'
 
 import Layout from '../components/Layout'
 import { Modal } from '../components/Modal'
@@ -75,11 +75,11 @@ export default function Home() {
           <Modal viewModal={ viewModal } setViewModal={ setViewModal } handleViewVideo = { handleViewVideo }>
               { hasWindow && 
                 <ReactPlayer //url={ `${viewModal.openClose ? "/media/video_paloma.mp4" : "" }` }
-                             url = { "/media/video_paloma.mp4" }
+                             url = { "/media/video_paloma.webm" }
                              //light={<img src='/img/monogramaBlack.png' alt='icono' />}
                              controls 
                              playsinline ={ true }
-                             playing={ isPlaying } 
+                             //playing={ isPlaying } 
                              muted = { isMute }
                              height="100%" 
                              width="100%" 
