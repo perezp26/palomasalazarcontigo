@@ -11,7 +11,7 @@ export default function Home() {
   const [hasWindow, setHasWindow] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMute, setIsMute] = useState(true);
-  const [viewModal, setViewModal] = useState({  animacionBackground : ' animate__animated animate__fadeIn', animacionContent : 'animate__animated animate__fadeIn', openClose: false });
+  const [viewModal, setViewModal] = useState({  animacionBackground : ' animate__animated animate__fadeIn', animacionContent : 'animate__animated animate__fadeIn', openClose: true });
 
   useEffect(() => {
 
@@ -74,7 +74,7 @@ export default function Home() {
          
           <Modal viewModal={ viewModal } setViewModal={ setViewModal } handleViewVideo = { handleViewVideo }>
               { hasWindow && 
-                <ReactPlayer url={ `${viewModal.openClose ? "/media/video_paloma.mp4" : "" }` }
+                <ReactPlayer url={ `${viewModal.openClose ? "/media/video_paloma.webm" : "" }` }
                              // url = "/media/video_paloma.mp4"
                              //light={<img src='/img/monogramaBlack.png' alt='icono' />}
                              controls 
