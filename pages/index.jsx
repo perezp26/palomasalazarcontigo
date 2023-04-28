@@ -75,7 +75,7 @@ export default function Home() {
           <Modal viewModal={ viewModal } setViewModal={ setViewModal } handleViewVideo = { handleViewVideo }>
               { hasWindow && 
                 <ReactPlayer //url={ `${viewModal.openClose ? "/media/video_paloma.mp4" : "" }` }
-                             url = { "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4" }
+                             url = { "/media/Intro.mp4" }
                              //light={<img src='/img/monogramaBlack.png' alt='icono' />}
                              controls 
                              playsinline ={ true }
