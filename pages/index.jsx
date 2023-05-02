@@ -10,7 +10,6 @@ export default function Home() {
   
   const [hasWindow, setHasWindow] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMute, setIsMute] = useState(true);
   const [viewModal, setViewModal] = useState({  animacionBackground : ' animate__animated animate__fadeIn', animacionContent : 'animate__animated animate__fadeIn', openClose: true });
 
   useEffect(() => {
@@ -20,8 +19,6 @@ export default function Home() {
     if (typeof window !== "undefined") {
       setHasWindow(true);
     }
-
-//    setTimeout( () => {  setIsPlaying( false ); setIsMute( true ) }, 1000)
 
   }, []);
 
@@ -75,12 +72,12 @@ export default function Home() {
           <Modal viewModal={ viewModal } setViewModal={ setViewModal } handleViewVideo = { handleViewVideo }>
               { hasWindow && 
                 <ReactPlayer //url={ `${viewModal.openClose ? "/media/video_paloma.mp4" : "" }` }
-                             url = { "/media/Intro.mp4" }
+                             url = { "/media/Intro2.mp4" }
                              //light={<img src='/img/monogramaBlack.png' alt='icono' />}
                              controls 
                              playsinline ={ true }
                              playing={ isPlaying }
-                             muted = { isMute }
+                             muted = { true }
                              height="100%" 
                              width="100%" 
                              type="video/mp4"
