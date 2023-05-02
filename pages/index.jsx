@@ -10,6 +10,7 @@ export default function Home() {
   
   const [hasWindow, setHasWindow] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [wVideo, setWVideo] = useState('full');
   const [viewModal, setViewModal] = useState({  animacionBackground : ' animate__animated animate__fadeIn', animacionContent : 'animate__animated animate__fadeIn', openClose: true });
 
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function Home() {
 
     if (typeof window !== "undefined") {
       setHasWindow(true);
+      screen.width < 1024 ? setWVideo( 'small' ) : setWVideo( 'full' )
     }
 
   }, []);
@@ -72,7 +74,7 @@ export default function Home() {
           <Modal viewModal={ viewModal } setViewModal={ setViewModal } handleViewVideo = { handleViewVideo }>
               { hasWindow && 
                 <ReactPlayer //url={ `${viewModal.openClose ? "/media/video_paloma.mp4" : "" }` }
-                             url = { "/media/Intro2.mp4" }
+                             url = { `${ wVideo == 'full' ? "media/introHD.mp4" : "/media/Intro2.mp4" }` }
                              //light={<img src='/img/monogramaBlack.png' alt='icono' />}
                              controls 
                              playsinline ={ true }
